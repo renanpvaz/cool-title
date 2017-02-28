@@ -10,7 +10,7 @@ const action = text => {
     .split('')
     .map(
       word => {
-        const titleWord = alphabet[word.toUpperCase()].split('\n');
+        const titleWord = characters[word.toUpperCase()].split('\n');
 
         titleWord.shift();
         titleWord.pop();
@@ -30,7 +30,7 @@ const action = text => {
   console.log(title[program.style] || title['white']);
 };
 
-const alphabet = {
+const characters = {
   '"': '',
 
   ' ': `
@@ -43,12 +43,12 @@ const alphabet = {
   `,
 
   '-': `
-    000000000
-    000000000
-    ████████║
-    000000000
-    000000000
-    000000000
+    0000000
+    0000000
+    ██████║
+    0000000
+    0000000
+    0000000
   `,
 
   A: `
