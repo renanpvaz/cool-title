@@ -1,0 +1,16 @@
+{
+  "name": "cool-title",
+  "version": "1.0.0",
+  "description": "CLI tool to display cool titles from text",
+  "main": "index.js",
+  "scripts": {},
+  "bin": {
+    "cool-title": "./index.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.9.0"
+  }
+}
