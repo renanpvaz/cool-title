@@ -4,14 +4,13 @@
 
 const program = require('commander');
 const colors = require('colors');
-const newline = /^win/.test(process.platform) ? '\r\n' : '\n';
 
 const action = text => {
   const titleWords = text
     .split('')
     .map(
       word => {
-        const titleWord = characters[word.toUpperCase()].split(newline);
+        const titleWord = characters[word.toUpperCase()].split('\n');
 
         titleWord.shift();
         titleWord.pop();
@@ -26,7 +25,7 @@ const action = text => {
       (line, i) => titleWords.map(words => words[i]).join('').replace(/ /g, '')
     );
 
-  const title = newline + lines.join(newline).replace(/0/g, ' ') + newline;
+  const title = '\n' + lines.join('\n').replace(/0/g, ' ') + '\n';
 
   console.log(title[program.style] || title['white']);
 };
