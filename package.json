@@ -1,6 +1,6 @@
 {
   "name": "cool-title",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI tool to display cool titles from text",
   "main": "index.js",
   "scripts": {},
